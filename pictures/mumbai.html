@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Mumbai</title>
+    <link rel="stylesheet" href="mumbai.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Large Banner with Background Image -->
+    <header class="mumbai-header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Welcome to <span class="mumbai">Mumbai</span></h1>
+            <p>The <span class="city">City </span> that never sleeps!</p>
+        </div>
+    </header>
+
+    <!-- Interactive Map Section -->
+<section class="map-section">
+    <h2>Explore Mumbai on the Map!</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571815112!2d72.71637042675336!3d19.082177510094255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1729233246507!5m2!1sen!2sin" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- Fun Facts Section -->
+<section class="fun-facts">
+    <h2>Fun Facts About Mumbai</h2>
+    <div class="facts-container">
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🏙</div>
+            <div class="fact-text">Mumbai is home to over 20 million people!</div>
+            <div class="fact-detail">This makes it one of the most populous cities in the world, often referred to as the financial capital of India!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🎬</div>
+            <div class="fact-text">The city is the heart of Bollywood, producing the most films annually worldwide.</div>
+            <div class="fact-detail">Mumbai is home to over 1,000 films produced each year, captivating audiences globally!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🚂</div>
+            <div class="fact-text">The Mumbai Suburban Railway, operating since 1853, is one of the busiest railways in the world!</div>
+            <div class="fact-detail">Transporting over 7.5 million passengers daily, it's a lifeline for Mumbaikars!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🌊</div>
+            <div class="fact-text">The iconic Marine Drive is also called the "Queen's Necklace" because of the streetlights that form a necklace shape at night.</div>
+            <div class="fact-detail">It's a popular spot for locals and tourists to enjoy breathtaking sunsets!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🏛️</div>
+            <div class="fact-text">The Chhatrapati Shivaji Maharaj Terminus is a UNESCO World Heritage Site!</div>
+            <div class="fact-detail">This historic railway station is an architectural marvel and a vital transport hub in the city!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🕌</div>
+            <div class="fact-text">Mumbai is home to the largest number of art deco buildings outside of Miami!</div>
+            <div class="fact-detail">These stunning structures showcase a unique architectural style and reflect the city's rich cultural heritage!</div>
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleFact(factElement) {
+    const detail = factElement.querySelector('.fact-detail');
+    detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+
+
+   <!-- Photo Gallery Section -->
+<!-- Photo Gallery Section -->
+<section class="photo-gallery">
+    <h2>Mumbai's Beautiful Sights</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Gateway_of_India" target="_blank">
+                <img src="gateway.jpg" alt="Gateway of India">
+                <div class="image-name">Gateway of India</div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Marine_Drive" target="_blank">
+                <img src="marine-drive.jpg" alt="Marine Drive">
+                <div class="image-name">Marine Drive</div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Colaba" target="_blank">
+                <img src="colaba.jpg" alt="Colaba">
+                <div class="image-name">Colaba</div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Chhatrapati_Shidaji_Terminus" target="_blank">
+                <img src="cha.jpg" alt="Chhatrapati Shivaji Terminus">
+                <div class="image-name">Chhatrapati Shivaji Terminus</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Clickable Landmarks Section -->
+<section class="landmarks">
+    <h2>Discover Mumbai's Landmarks</h2>
+    <div class="landmarks-container">
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Taj_Mahal_Palace', '_blank')">
+            <img src="taj.jpg" alt="Taj Hotel">
+            <div class="card-content">
+                <h3>Taj Mahal Hotel</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Film_City,_Goregaon', '_blank')">
+            <img src="film.jpg" alt="Film City">
+            <div class="card-content">
+                <h3>Bollywood Film City</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Elephanta_Caves', '_blank')">
+            <img src="elephanta.jpg" alt="Elephanta Caves">
+            <div class="card-content">
+                <h3>Elephanta Caves</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Bandra_Worli_Sea_Link', '_blank')">
+            <img src="bandra.jpg" alt="Bandra-Worli Sea Link">
+            <div class="card-content">
+                <h3>Bandra-Worli Sea Link</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Train Button Icon -->
+  <div class="train-button" onclick="triggerTrain()">🚂</div>
+
+  <!-- SVG Train Container -->
+  <div class="train-container" id="localTrain">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100" fill="none" stroke="black">
+          <!-- Train Body -->
+          <rect x="50" y="20" width="500" height="60" fill="#FF5733" stroke="black" stroke-width="2"/> <!-- Orange body -->
+          <!-- Train Windows -->
+          <rect x="70" y="30" width="80" height="30" fill="#3498DB" stroke="black" stroke-width="2"/> <!-- Blue windows -->
+          <rect x="170" y="30" width="80" height="30" fill="#3498DB" stroke="black" stroke-width="2"/> 
+          <rect x="270" y="30" width="80" height="30" fill="#3498DB" stroke="black" stroke-width="2"/> 
+          <rect x="370" y="30" width="80" height="30" fill="#3498DB" stroke="black" stroke-width="2"/> 
+          <rect x="470" y="30" width="60" height="30" fill="#3498DB" stroke="black" stroke-width="2"/>
+          <!-- Train Wheels -->
+          <circle cx="100" cy="85" r="12" fill="#2C3E50"/> <!-- Dark grey wheels -->
+          <circle cx="220" cy="85" r="12" fill="#2C3E50"/>
+          <circle cx="340" cy="85" r="12" fill="#2C3E50"/>
+          <circle cx="460" cy="85" r="12" fill="#2C3E50"/>
+          <!-- Train roof -->
+          <rect x="50" y="10" width="500" height="10" fill="#1ABC9C" stroke="black" stroke-width="2"/> <!-- Teal roof -->
+      </svg>
+  </div>
+
+  <script>
+      function triggerTrain() {
+          const train = document.getElementById('localTrain');
+          // Remove the class if it exists to reset the animation
+          train.classList.remove('animate-train');
+          
+          // Force reflow (this is needed to restart the animation)
+          void train.offsetWidth;
+          
+          // Add the class again to start the animation
+          train.classList.add('animate-train');
+      }
+  </script>
+
+
+    <script src="slideshow.js"></script>
+
+     <!-- Footer Section -->
+     <footer>
+        <p>Copyright &copy; Mumbai</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Jaipur</title>
+    <link rel="stylesheet" href="jaipur.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Large Banner with Background Image -->
+    <header class="jaipur-header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Welcome to <span class="jaipur">Jaipur</span></h1>
+            <p>The <span class="city">Pink City</span> of Rajasthan!</p>
+        </div>
+    </header>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+        <h2>Explore Jaipur on the Map!</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.055123319031!2d75.81019981445939!3d26.91243318310837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c17e27d81b65b%3A0x7d9b0c91eabb74c8!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1729233346507!5m2!1sen!2sin" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section class="fun-facts">
+        <h2>Fun Facts About Jaipur</h2>
+        <div class="facts-container">
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">🏰</div>
+                <div class="fact-text">Jaipur is famous for its majestic forts!</div>
+                <div class="fact-detail">The city is home to stunning forts like Amer Fort and Nahargarh Fort, showcasing rich Rajputana history.</div>
+            </div>
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">🕌</div>
+                <div class="fact-text">Jaipur is known for its intricate palaces!</div>
+                <div class="fact-detail">The city features beautiful palaces such as the City Palace and Hawa Mahal, reflecting Mughal and Rajput architecture.</div>
+            </div>
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">🛍️</div>
+                <div class="fact-text">Jaipur is a shopper's paradise!</div>
+                <div class="fact-detail">The city is famous for its vibrant bazaars, offering handicrafts, textiles, and jewelry unique to Rajasthan.</div>
+            </div>
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">🎉</div>
+                <div class="fact-text">Jaipur hosts the famous Jaipur Literature Festival!</div>
+                <div class="fact-detail">This annual festival attracts writers and literary enthusiasts from around the world, celebrating literature and culture.</div>
+            </div>
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">🌇</div>
+                <div class="fact-text">Jaipur is known for its colorful festivals!</div>
+                <div class="fact-detail">From Diwali to Teej, Jaipur celebrates various festivals with enthusiasm, showcasing its rich cultural heritage.</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    function toggleFact(factElement) {
+        const detail = factElement.querySelector('.fact-detail');
+        detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+    }
+    </script>
+
+    <!-- Photo Gallery Section -->
+    <section class="photo-gallery">
+        <h2>Jaipur's Heritage Sights</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" target="_blank">
+                    <img src="Hawa_Mahal.jpg" alt="Hawa Mahal">
+                    <div class="image-name">Hawa Mahal</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://en.wikipedia.org/wiki/Amer_Fort" target="_blank">
+                    <img src="Amer_Fort.jpg" alt="Amer Fort">
+                    <div class="image-name">Amer Fort</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://en.wikipedia.org/wiki/City_Palace,_Jaipur" target="_blank">
+                    <img src="City_Palace.jpg" alt="City Palace">
+                    <div class="image-name">City Palace</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://en.wikipedia.org/wiki/Jaipur" target="_blank">
+                    <img src="Jal_Mahal.jpg" alt="Jal Mahal">
+                    <div class="image-name">Jal Mahal</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clickable Landmarks Section -->
+    <section class="landmarks">
+        <h2>Discover Jaipur's Landmarks</h2>
+        <div class="landmarks-container">
+            <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Amer_Fort', '_blank')">
+                <img src="Amer_Fort.jpg" alt="Amer Fort">
+                <div class="card-content">
+                    <h3>Amer Fort</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </div>
+
+            <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Hawa_Mahal', '_blank')">
+                <img src="Hawa_Mahal.jpg" alt="Hawa Mahal">
+                <div class="card-content">
+                    <h3>Hawa Mahal</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </div>
+
+            <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/City_Palace,_Jaipur', '_blank')">
+                <img src="City_Palace.jpg" alt="City Palace">
+                <div class="card-content">
+                    <h3>City Palace</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </div>
+
+            <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Jal_Mahal', '_blank')">
+                <img src="Jal_Mahal.jpg" alt="Jal Mahal">
+                <div class="card-content">
+                    <h3>Jal Mahal</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Auto-Rickshaw Button Icon -->
+<div class="train-button" onclick="triggerRickshaw()">🛺</div>
+
+<!-- SVG Auto-Rickshaw Container -->
+<div class="train-container" id="localRickshaw">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100" fill="none" stroke="black">
+        <!-- Rickshaw Body -->
+        <rect x="100" y="30" width="400" height="40" fill="#FFC300" stroke="black" stroke-width="2"/> <!-- Yellow body -->
+        <!-- Rickshaw Roof -->
+        <rect x="150" y="15" width="300" height="20" fill="#2ECC71" stroke="black" stroke-width="2"/> <!-- Green roof -->
+        <!-- Windows -->
+        <rect x="120" y="30" width="80" height="25" fill="#3498DB" stroke="black" stroke-width="2"/> <!-- Blue window -->
+        <rect x="400" y="30" width="80" height="25" fill="#3498DB" stroke="black" stroke-width="2"/> 
+        <!-- Rickshaw Wheels -->
+        <circle cx="150" cy="75" r="10" fill="#2C3E50"/> <!-- Left wheel -->
+        <circle cx="450" cy="75" r="10" fill="#2C3E50"/> <!-- Right wheel -->
+        <circle cx="300" cy="75" r="10" fill="#2C3E50"/> <!-- Middle wheel -->
+    </svg>
+</div>
+
+<script>
+    function triggerRickshaw() {
+        const rickshaw = document.getElementById('localRickshaw');
+        // Remove the class if it exists to reset the animation
+        rickshaw.classList.remove('animate-rickshaw');
+        
+        // Force reflow (this is needed to restart the animation)
+        void rickshaw.offsetWidth;
+        
+        // Add the class again to start the animation
+        rickshaw.classList.add('animate-rickshaw');
+    }
+</script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; Jaipur</p>
+    </footer>
+
+</body>
+</html>

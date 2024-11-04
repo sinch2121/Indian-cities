@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kolkata</title>
+    <link rel="stylesheet" href="kolkata.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Large Banner with Background Image -->
+    <header class="kolkata-header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Welcome to <span class="kolkata">Kolkata</span></h1>
+            <p>The <span class="city">City of Joy</span> and Culture!</p>
+        </div>
+    </header>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+        <h2>Explore Kolkata on the Map!</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.426474708621!2d88.36389261452996!3d22.572646785178417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027712d56ac9e7%3A0xc80b9a92615d9f41!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1729233346507!5m2!1sen!2sin" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section class="fun-facts">
+        <h2>Fun Facts About Kolkata</h2>
+        <div class="facts-container">
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">🏛</div>
+                <div class="fact-text">Kolkata is famous for its colonial architecture!</div>
+                <div class="fact-detail">The city is home to architectural wonders like the Victoria Memorial and Howrah Bridge, reflecting British colonial influence.</div>
+            </div>
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">🍛</div>
+                <div class="fact-text">Kolkata is a haven for food lovers!</div>
+                <div class="fact-detail">From mishti doi to kathi rolls and fish curries, Kolkata's cuisine is a delightful blend of flavors.</div>
+            </div>
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">🎶</div>
+                <div class="fact-text">Kolkata is the cultural capital of India!</div>
+                <div class="fact-detail">The city has a deep-rooted tradition in art, music, literature, and is known for its annual Durga Puja celebrations.</div>
+            </div>
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">📚</div>
+                <div class="fact-text">Kolkata is a literary hub!</div>
+                <div class="fact-detail">The city has produced numerous literary giants like Rabindranath Tagore, and the Kolkata Book Fair is one of the largest in the world.</div>
+            </div>
+            <div class="fact" onclick="toggleFact(this)">
+                <div class="fact-icon">🌳</div>
+                <div class="fact-text">Kolkata is green and scenic!</div>
+                <div class="fact-detail">With lush parks like the Maidan and the Botanical Gardens, Kolkata offers natural beauty in the heart of the city.</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    function toggleFact(factElement) {
+        const detail = factElement.querySelector('.fact-detail');
+        detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+    }
+    </script>
+
+    <!-- Photo Gallery Section -->
+    <section class="photo-gallery">
+        <h2>Kolkata's Heritage Sights</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata" target="_blank">
+                    <img src="Victoria_Memorial.jpg" alt="Victoria Memorial">
+                    <div class="image-name">Victoria Memorial</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://en.wikipedia.org/wiki/Howrah_Bridge" target="_blank">
+                    <img src="howrah.jpg" alt="Howrah Bridge">
+                    <div class="image-name">Howrah Bridge</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://en.wikipedia.org/wiki/Indian_Museum" target="_blank">
+                    <img src="muesum.jpg" alt="Indian Museum">
+                    <div class="image-name">Indian Museum</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://en.wikipedia.org/wiki/Dakshineswar_Kali_Temple" target="_blank">
+                    <img src="Dakshineswar_Temple.jpg" alt="Dakshineswar Temple">
+                    <div class="image-name">Dakshineswar Temple</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clickable Landmarks Section -->
+    <section class="landmarks">
+        <h2>Discover Kolkata's Landmarks</h2>
+        <div class="landmarks-container">
+            <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Fort_William,_India', '_blank')">
+                <img src="Fort_William.jpg" alt="Fort William">
+                <div class="card-content">
+                    <h3>Fort William</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </div>
+
+            <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Belur_Math', '_blank')">
+                <img src="Belur_Math.jpg" alt="Belur Math">
+                <div class="card-content">
+                    <h3>Belur Math</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </div>
+
+            <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Birla_Planetarium,_Kolkata', '_blank')">
+                <img src="Birla_Planetarium.jpg" alt="Birla Planetarium">
+                <div class="card-content">
+                    <h3>Birla Planetarium</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </div>
+
+            <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Eden_Gardens', '_blank')">
+                <img src="Eden_Gardens.jpg" alt="Eden Gardens">
+                <div class="card-content">
+                    <h3>Eden Gardens</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer Section -->
+ <footer>
+    <p>Copyright &copy; Kolkata</p>
+</footer>
+<!-- Tram Button Icon -->
+<div class="tram-button" onclick="triggerTram()">🚋</div>
+
+<!-- SVG Tram Container -->
+<div class="tram-container" id="kolkataTram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150" fill="none" stroke="black">
+        <!-- Tram Body -->
+        <rect x="50" y="40" width="500" height="60" fill="#E74C3C" stroke="black" stroke-width="2"/> <!-- Red body -->
+
+        <!-- Tram Roof -->
+        <rect x="70" y="20" width="460" height="20" fill="#7DCEA0" stroke="black" stroke-width="2"/> <!-- Green roof -->
+
+        <!-- Tram Windows -->
+        <rect x="90" y="45" width="60" height="35" fill="#3498DB" stroke="black" stroke-width="2"/> <!-- Window 1 -->
+        <rect x="180" y="45" width="60" height="35" fill="#3498DB" stroke="black" stroke-width="2"/> <!-- Window 2 -->
+        <rect x="270" y="45" width="60" height="35" fill="#3498DB" stroke="black" stroke-width="2"/> <!-- Window 3 -->
+        <rect x="360" y="45" width="60" height="35" fill="#3498DB" stroke="black" stroke-width="2"/> <!-- Window 4 -->
+        <rect x="450" y="45" width="60" height="35" fill="#3498DB" stroke="black" stroke-width="2"/> <!-- Window 5 -->
+
+        <!-- Tram Wheels -->
+        <circle cx="120" cy="110" r="12" fill="#2C3E50"/> <!-- Left wheel -->
+        <circle cx="280" cy="110" r="12" fill="#2C3E50"/> <!-- Middle wheel -->
+        <circle cx="440" cy="110" r="12" fill="#2C3E50"/> <!-- Right wheel -->
+
+        <!-- Electric Pole on top -->
+        <line x1="300" y1="20" x2="300" y2="0" stroke="black" stroke-width="2"/>
+        <circle cx="300" cy="0" r="5" fill="black"/> <!-- Pole Top -->
+    </svg>
+</div>
+
+<script>
+    function triggerTram() {
+        const tram = document.getElementById('kolkataTram');
+        // Remove the class if it exists to reset the animation
+        tram.classList.remove('animate-tram');
+        
+        // Force reflow (this is needed to restart the animation)
+        void tram.offsetWidth;
+        
+        // Add the class again to start the animation
+        tram.classList.add('animate-tram');
+    }
+</script>
+</body>
+</html>

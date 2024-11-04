@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Banaras</title>
+    <link rel="stylesheet" href="banaras.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Large Banner with Background Image -->
+    <header class="banaras-header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Welcome to <span class="banaras">Banaras</span></h1>
+            <p>The <span class="city">Spiritual Capital</span> of India!</p>
+        </div>
+    </header>
+
+    <!-- Interactive Map Section -->
+<section class="map-section">
+    <h2>Explore Banaras on the Map!</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.5807085319227!2d83.00499771464247!3d25.317645434289467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e3396f18656a9%3A0x7225e174f86146f1!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1729233246507!5m2!1sen!2sin" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- Fun Facts Section -->
+<section class="fun-facts">
+    <h2>Fun Facts About Banaras</h2>
+    <div class="facts-container">
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">⛵</div>
+            <div class="fact-text">Banaras is one of the oldest continuously inhabited cities in the world!</div>
+            <div class="fact-detail">With over 3,000 years of history, Banaras (Varanasi) is one of the most ancient cities, revered by Hindus worldwide.</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🌊</div>
+            <div class="fact-text">The city lies along the sacred River Ganga!</div>
+            <div class="fact-detail">Pilgrims flock here to take a dip in the Ganga, which is believed to wash away sins and offer salvation.</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🔔</div>
+            <div class="fact-text">Banaras is known for its mesmerizing Ganga Aarti!</div>
+            <div class="fact-detail">Every evening, the Ganga Aarti ceremony takes place on the ghats, offering a spiritual experience like no other.</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🎨</div>
+            <div class="fact-text">Banaras is also famous for its fine silk and Banarasi sarees!</div>
+            <div class="fact-detail">The city produces some of the most exquisite handwoven sarees that are treasured across India and the world.</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🏞️</div>
+            <div class="fact-text">The ghats of Banaras offer some of the best sunrise views!</div>
+            <div class="fact-detail">Visitors can enjoy boat rides at dawn to witness the breathtaking view of the sun rising over the Ganga River.</div>
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleFact(factElement) {
+    const detail = factElement.querySelector('.fact-detail');
+    detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+<!-- Photo Gallery Section -->
+<section class="photo-gallery">
+    <h2>Banaras' Spiritual Sights</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple" target="_blank">
+                <img src="kashi.jpg" alt="Kashi Vishwanath Temple">
+                <div class="image-name">Kashi Vishwanath Temple</div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Dashashwamedh_Ghat" target="_blank">
+                <img src="dashghat.jpg" alt="Dashashwamedh Ghat">
+                <div class="image-name">Dashashwamedh Ghat</div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Assi_Ghat" target="_blank">
+                <img src="assi.jpg" alt="Assi Ghat">
+                <div class="image-name">Assi Ghat</div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Sarnath" target="_blank">
+                <img src="sarnath.jpg" alt="Sarnath">
+                <div class="image-name">Sarnath</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Clickable Landmarks Section -->
+<section class="landmarks">
+    <h2>Discover Banaras' Landmarks</h2>
+    <div class="landmarks-container">
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Tulsi_Manas_Temple', '_blank')">
+            <img src="manas12.jpg" alt="Tulsi Manas Temple">
+            <div class="card-content">
+                <h3>Tulsi Manas Temple</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Manikarnika_Ghat', '_blank')">
+            <img src="mani.jpg" alt="Manikarnika Ghat">
+            <div class="card-content">
+                <h3>Manikarnika Ghat</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Ramnagar_Fort', '_blank')">
+            <img src="ramnagar.jpg" alt="Ramnagar Fort">
+            <div class="card-content">
+                <h3>Ramnagar Fort</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Banaras_Hindu_University', '_blank')">
+            <img src="bhu.jpg" alt="Banaras Hindu University">
+            <div class="card-content">
+                <h3>Banaras Hindu University</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Boat Button Icon -->
+<div class="boat-button" onclick="triggerBoat()">🚤</div>
+
+<!-- SVG Boat Container -->
+<div class="boat-container" id="localBoat">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100" fill="none" stroke="black">
+        <!-- Boat Hull -->
+        <path d="M50 70 Q300 100 550 70 L550 50 Q300 30 50 50 Z" fill="#8B4513" stroke="black" stroke-width="2"/> <!-- Wooden brown hull -->
+        
+        <!-- Boat Roof -->
+        <rect x="150" y="20" width="300" height="20" fill="#FF5733" stroke="black" stroke-width="2"/> <!-- Orange roof -->
+        
+        <!-- Boat Windows -->
+        <rect x="170" y="25" width="60" height="15" fill="#3498DB" stroke="black" stroke-width="2"/> <!-- Blue windows -->
+        <rect x="250" y="25" width="60" height="15" fill="#3498DB" stroke="black" stroke-width="2"/> 
+        <rect x="330" y="25" width="60" height="15" fill="#3498DB" stroke="black" stroke-width="2"/> 
+        <rect x="410" y="25" width="60" height="15" fill="#3498DB" stroke="black" stroke-width="2"/>
+        
+        <!-- Boat Oars -->
+        <line x1="120" y1="60" x2="80" y2="90" stroke="black" stroke-width="4"/> <!-- Left oar -->
+        <line x1="480" y1="60" x2="520" y2="90" stroke="black" stroke-width="4"/> <!-- Right oar -->
+    </svg>
+</div>
+
+<script>
+    function triggerBoat() {
+        const boat = document.getElementById('localBoat');
+        // Remove the class if it exists to reset the animation
+        boat.classList.remove('animate-boat');
+        
+        // Force reflow (this is needed to restart the animation)
+        void boat.offsetWidth;
+        
+        // Add the class again to start the animation
+        boat.classList.add('animate-boat');
+    }
+</script>
+<!-- Footer Section -->
+<footer>
+    <p>Copyright &copy; Banaras</p>
+</footer>
+</body>
+</html>

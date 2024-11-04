@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Delhi</title>
+    <link rel="stylesheet" href="delhi.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Large Banner with Background Image -->
+    <header class="delhi-header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Welcome to <span class="delhi">NEW Delhi</span></h1>
+            <p>The <span class="city">Capital </span> of India!</p>
+        </div>
+    </header>
+
+    <!-- Interactive Map Section -->
+<section class="map-section">
+    <h2>Explore New Delhi on the Map!</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571815112!2d77.0722214!3d28.6139391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd4b2307a779%3A0x67e5bcba7ec4340!2sDelhi%2C%20India!5e0!3m2!1sen!2sin!4v1632237718047!5m2!1sen!2sin" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- Fun Facts Section -->
+<section class="fun-facts">
+    <h2>Fun Facts About New Delhi</h2>
+    <div class="facts-container">
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🏛️</div>
+            <div class="fact-text">Delhi is home to over 20 million people!</div>
+            <div class="fact-detail">This makes it one of the most populous cities in the world and a bustling hub of culture and commerce!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🕌</div>
+            <div class="fact-text">The city boasts historical landmarks like the Red Fort and Humayun's Tomb, both UNESCO World Heritage Sites.</div>
+            <div class="fact-detail">These sites showcase the rich architectural heritage of India!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🚇</div>
+            <div class="fact-text">Delhi Metro is one of the largest and fastest-growing metro networks in the world!</div>
+            <div class="fact-detail">It provides efficient transport for millions of daily commuters!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🍲</div>
+            <div class="fact-text">Delhi is known for its diverse and delicious street food, like chaat and parathas.</div>
+            <div class="fact-detail">The city offers a culinary experience that reflects its cultural diversity!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🏙️</div>
+            <div class="fact-text">Connaught Place is one of the largest financial, commercial, and business centers in Delhi.</div>
+            <div class="fact-detail">Its iconic architecture and vibrant atmosphere attract locals and tourists alike!</div>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <div class="fact-icon">🌳</div>
+            <div class="fact-text">Delhi is home to numerous parks and gardens, like the famous Lodhi Gardens.</div>
+            <div class="fact-detail">These green spaces provide a tranquil escape amidst the urban hustle!</div>
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleFact(factElement) {
+    const detail = factElement.querySelector('.fact-detail');
+    detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+<!-- Photo Gallery Section -->
+<section class="photo-gallery">
+    <h2>New Delhi's Beautiful Sights</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Red_Fort" target="_blank">
+                <img src="Red fort.jpg" alt="Red Fort">
+                <div class="image-name">Red Fort</div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Humayun%27s_Tomb" target="_blank">
+                <img src="humayun.jpg" alt="Humayun's Tomb">
+                <div class="image-name">Humayun's Tomb</div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/Qutub_Minar" target="_blank">
+                <img src="qutub.jpg" alt="Qutub Minar">
+                <div class="image-name">Qutub Minar</div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="https://en.wikipedia.org/wiki/India_Gate" target="_blank">
+                <img src="India Gate.jpg" alt="India Gate">
+                <div class="image-name">India Gate</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Clickable Landmarks Section -->
+<section class="landmarks">
+    <h2>Discover New Delhi's Landmarks</h2>
+    <div class="landmarks-container">
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Lotus_Temple', '_blank')">
+            <img src="lotus.jpg" alt="Lotus Temple">
+            <div class="card-content">
+                <h3>Lotus Temple</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Chandni_Chowk', '_blank')">
+            <img src="cc.jpg" alt="Chandni Chowk">
+            <div class="card-content">
+                <h3>Chandni Chowk</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/Akshardham', '_blank')">
+            <img src="akshardham.jpg" alt="Akshardham Temple">
+            <div class="card-content">
+                <h3>Akshardham Temple</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+
+        <div class="landmark-card" onclick="window.open('https://en.wikipedia.org/wiki/India_Gate', '_blank')">
+            <img src="jama.jpg" alt="India Gate">
+            <div class="card-content">
+                <h3>Jama masjid</h3>
+                <p>Click to learn more!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Auto Button Icon -->
+<div class="auto-button" onclick="triggerAutoRickshaw()">🛺</div>
+
+<!-- Auto Rickshaw Image Container -->
+<div class="auto-container" id="autoRickshaw">
+    <img src="auto.jpg" alt="Auto Rickshaw" class="auto-image">
+</div>
+
+<script>
+    function triggerAutoRickshaw() {
+        const auto = document.getElementById('autoRickshaw');
+        // Remove the class if it exists to reset the animation
+        auto.classList.remove('animate-auto');
+
+        // Force reflow (this is needed to restart the animation)
+        void auto.offsetWidth;
+
+        // Add the class again to start the animation
+        auto.classList.add('animate-auto');
+    }
+</script>
+
+   <!-- Footer Section -->
+   <footer>
+    <p>Copyright &copy; New Delhi</p>
+</footer>
+
+
+
+</body>
+</html>
